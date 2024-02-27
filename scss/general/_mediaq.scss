@@ -1,0 +1,63 @@
+@use "../general/mixin" as *;
+@use "../general/variables" as *;
+@use "../general/generales" as *;
+
+//* Desktop
+
+@include desktop() {
+  .about {
+    &__container {
+      .content {
+        order: 1;
+        flex: 0 0 100% !important;
+        margin: 50px 0;
+      }
+
+      .container_img {
+        order: 0;
+        flex: 0 0 100% !important;
+        margin: 50px 0;
+      }
+    }
+  }
+
+  .icons {
+    width: 100% !important;
+  }
+}
+
+//* Tablets
+
+@include tablets() {
+  .card {
+    width: 45% !important;
+  }
+}
+
+//* Mobile
+
+@include mobile() {
+  .about {
+    &__container {
+      .content {
+        h4 {
+          text-align: center !important;
+        }
+
+        span.text-primario {
+          @include dflex(center, center, row);
+        }
+      }
+    }
+  }
+
+  .card {
+    width: 100% !important;
+  }
+
+  .footer {
+    &__container {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}

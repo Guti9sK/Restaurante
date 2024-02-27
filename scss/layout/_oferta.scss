@@ -1,0 +1,25 @@
+@use "../general/mixin" as *;
+@use "../general/variables" as *;
+@use "../general/componentes" as *;
+
+.oferta {
+  position: relative;
+  @include dflex(center, center, column nowrap);
+  width: 100%;
+  height: 500px;
+  background: url(../../img/image3.jpg) fixed center;
+  background-size: cover;
+
+  &__content {
+    @include dflex(center, center, column);
+    height: 100%;
+  }
+
+  &::before {
+    @extend .overlay;
+  }
+
+  * {
+    position: relative;
+  }
+}

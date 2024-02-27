@@ -1,0 +1,18 @@
+//* Generales
+@use "general/fonts";
+@use "general/variables";
+@use "general/reset";
+@use "general/generales";
+@use "general/mixin";
+@use "general/mediaq";
+
+//* Componentes
+@use "general/componentes";
+
+//* Layout
+@use "layout/nav";
+@use "layout/header";
+@use "layout/about";
+@use "layout/oferta";
+@use "layout/menu";
+@use "layout/footer";
